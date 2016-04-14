@@ -2,7 +2,7 @@
 
 #include "stdafx.h"
 #include "robotcontroller.h"
-#include "serialcomm.h"
+#include "TR_Lib.h"
 #include "serialframe.h"
 
 #include <stdio.h>

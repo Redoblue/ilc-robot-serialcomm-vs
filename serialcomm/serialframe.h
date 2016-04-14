@@ -1,3 +1,4 @@
+#pragma once
 #ifndef SERIAL_FRAME_H
 #define SERIAL_FRAME_H
 
@@ -6,7 +7,13 @@
 
 #define PI 3.14f
 
-class Frame
+#ifdef DLL_EXPORT
+#define DLLAPI __declspec(dllexport)
+#else
+#define DLLAPI __declspec(dllimport)
+#endif
+
+class DLLAPI Frame
 {
 public:
 	//virtual int FromStream(uint8_t &stream) = 0;
@@ -25,7 +32,7 @@ public:
 	};
 };
 
-class DataFrame : public Frame
+class DLLAPI DataFrame : public Frame
 {
 public:
 	DataFrame();
@@ -43,16 +50,13 @@ public:
 	static const int FRAME_LENGTH;
 
 	RobotController::LimitState m_limitSwichState;				// limit switch state
-
-private:
-	void ResolveData(uint8_t* frame);
 };
 
-class WalkFrame : public Frame
+class DLLAPI WalkFrame : public Frame
 {
 public:
 	WalkFrame();
-	WalkFrame(float speed, float directionAngle, float rotationSpeed);
+	WalkFrame(float lineSpeed, float directionAngle, float angularSpeed);
 	~WalkFrame();
 
 	//virtual int FromStream(uint8_t &stream);
@@ -69,16 +73,13 @@ public:
 	float m_lineSpeed;
 	float m_directionAngle;
 	float m_angularSpeed;
-
-private:
-	void ResolveData(uint8_t* frame);
 };
 
-class LiftFrame : public Frame
+class DLLAPI LiftFrame : public Frame
 {
 public:
 	LiftFrame();
-	LiftFrame(float speed);
+	LiftFrame(float lineSpeed);
 	~LiftFrame();
 
 	//virtual int FromStream(uint8_t &stream);
@@ -93,9 +94,6 @@ public:
 	static const int FRAME_LENGTH;
 
 	float m_lineSpeed;
-
-private:
-	void ResolveData(uint8_t* frame);
 };
 
 #endif // SERIAL_FRAME_H

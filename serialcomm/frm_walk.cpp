@@ -1,3 +1,5 @@
+#define DLL_EXPORT
+
 #include "stdafx.h"
 #include "serialframe.h"
 
@@ -8,18 +10,20 @@ const int WalkFrame::FRAME_XOR_FLAG = WalkFrame::FRAME_DATA_LENGTH + 3;
 const int WalkFrame::FRAME_END_FLAG = WalkFrame::FRAME_XOR_FLAG + 1;
 const int WalkFrame::FRAME_LENGTH = WalkFrame::FRAME_END_FLAG + 1;
 
-WalkFrame::WalkFrame()
+WalkFrame::WalkFrame() :
+	m_lineSpeed(0.0f),
+	m_directionAngle(PI / 2),
+	m_angularSpeed(0.0f)
 {
-	m_lineSpeed = 0;
-	m_directionAngle = PI / 2;
-	m_angularSpeed = 0;
+
 }
 
-WalkFrame::WalkFrame(float speed, float directionAngle, float rotationSpeed)
+WalkFrame::WalkFrame(float lineSpeed, float directionAngle, float angularSpeed) :
+	m_lineSpeed(lineSpeed),
+	m_directionAngle(directionAngle),
+	m_angularSpeed(angularSpeed)
 {
-	this->m_lineSpeed = speed;
-	this->m_directionAngle = directionAngle;
-	this->m_angularSpeed = rotationSpeed;
+
 }
 
 WalkFrame::~WalkFrame()

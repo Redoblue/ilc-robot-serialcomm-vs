@@ -1,14 +1,68 @@
-﻿生成启动时间为 2016/4/14 10:21:07。
-     1>项目“E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\serialcomm\serialcomm.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2016/4/14 18:16:47。
+     1>项目“E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\serialcomm\serialcomm.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Ktr_lib.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SERIALCOMM_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt frm_walk.cpp robotcontroller.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SERIALCOMM_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt robotcontroller.cpp dllmain.cpp frame.cpp frm_data.cpp frm_lift.cpp frm_walk.cpp serialcomm.cpp stdafx.cpp TR_Lib.cpp
+         TR_Lib.cpp
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(7): warning C4273: “TRComm::TRComm”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(26) : 参见“{ctor}”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(34): warning C4273: “TRComm::~TRComm”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(27) : 参见“{dtor}”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(75): warning C4273: “TRComm::InitPort”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(30) : 参见“InitPort”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(251): warning C4273: “TRComm::CommThread”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(66) : 参见“CommThread”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(382): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(383): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(384): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(385): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(387): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(407): warning C4273: “TRComm::StartMonitoring”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(40) : 参见“StartMonitoring”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(419): warning C4273: “TRComm::RestartMonitoring”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(41) : 参见“RestartMonitoring”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(431): warning C4273: “TRComm::StopMonitoring”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(42) : 参见“StopMonitoring”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(444): warning C4273: “TRComm::ProcessErrorMessage”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(65) : 参见“ProcessErrorMessage”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(474): warning C4273: “TRComm::WriteChar”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(68) : 参见“WriteChar”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(557): warning C4273: “TRComm::ReceiveChar”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(67) : 参见“ReceiveChar”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(678): warning C4273: “TRComm::GetDCB”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(46) : 参见“GetDCB”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(686): warning C4273: “TRComm::GetCommEvents”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(45) : 参见“GetCommEvents”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(694): warning C4273: “TRComm::GetWriteBufferSize”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(44) : 参见“GetWriteBufferSize”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(699): warning C4273: “TRComm::IsOpen”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(54) : 参见“IsOpen”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(704): warning C4273: “TRComm::ClosePort”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(53) : 参见“ClosePort”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(728): warning C4273: “TRComm::WriteToPort”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(50) : 参见“WriteToPort”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(751): warning C4273: “TRComm::WriteToPort”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(52) : 参见“WriteToPort”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(763): warning C4273: “TRComm::SendData”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(56) : 参见“SendData”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(773): warning C4273: “TRComm::RecvData”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(57) : 参见“RecvData”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(793): warning C4273: “TRComm::RetriveData”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(60) : 参见“RetriveData”的前一个定义
+     1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.cpp(859): warning C4273: “TRComm::Stream2Frame”: dll 链接不一致
+                 e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\tr_lib.h(107) : 参见“Stream2Frame”的前一个定义
+         stdafx.cpp
+         serialcomm.cpp
+         frm_walk.cpp
+         frm_lift.cpp
+         frm_data.cpp
+         frame.cpp
+         dllmain.cpp
          robotcontroller.cpp
      1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\robotcontroller.cpp(141): warning C4244: “参数”: 从“const float”转换到“DWORD”，可能丢失数据
      1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\robotcontroller.cpp(148): warning C4244: “参数”: 从“const float”转换到“DWORD”，可能丢失数据
      1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\robotcontroller.cpp(166): warning C4244: “参数”: 从“float”转换到“DWORD”，可能丢失数据
      1>e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\robotcontroller.cpp(189): warning C4244: “参数”: 从“float”转换到“DWORD”，可能丢失数据
-         frm_walk.cpp
          正在生成代码...
        Link:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\Debug\serialcomm.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\Debug\serialcomm.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\Debug\serialcomm.lib" /MACHINE:X86 /DLL Debug\robotcontroller.obj
@@ -17,13 +71,21 @@
          Debug\frm_data.obj
          Debug\frm_lift.obj
          Debug\frm_walk.obj
-         Debug\stdafx.obj
          Debug\serialcomm.obj
+         Debug\stdafx.obj
+         Debug\TR_Lib.obj
             正在创建库 E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\Debug\serialcomm.lib 和对象 E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\Debug\serialcomm.exp
-     1>serialcomm.obj : warning LNK4217: 本地定义的符号 ??_7TRComm@@6B@ (const TRComm::`vftable') 在函数 "public: __thiscall TRComm::TRComm(void)" (??0TRComm@@QAE@XZ) 中导入
+     1>TR_Lib.obj : warning LNK4217: 本地定义的符号 ??0DataFrame@@QAE@XZ (public: __thiscall DataFrame::DataFrame(void)) 在函数 "public: __thiscall TRComm::TRComm(void)" (??0TRComm@@QAE@XZ) 中导入
+     1>TR_Lib.obj : warning LNK4217: 本地定义的符号 ??1DataFrame@@QAE@XZ (public: __thiscall DataFrame::~DataFrame(void)) 在函数 "public: void * __thiscall DataFrame::`scalar deleting destructor'(unsigned int)" (??_GDataFrame@@QAEPAXI@Z) 中导入
+     1>TR_Lib.obj : warning LNK4049: 已导入本地定义的符号 ?FRAME_HEAD_1@Frame@@2EB (public: static unsigned char const Frame::FRAME_HEAD_1)
+     1>TR_Lib.obj : warning LNK4049: 已导入本地定义的符号 ?FRAME_HEAD_2@Frame@@2EB (public: static unsigned char const Frame::FRAME_HEAD_2)
+     1>TR_Lib.obj : warning LNK4049: 已导入本地定义的符号 ?FRAME_TAIL@Frame@@2EB (public: static unsigned char const Frame::FRAME_TAIL)
+     1>TR_Lib.obj : warning LNK4049: 已导入本地定义的符号 ?FRAME_TYPE@DataFrame@@2EB (public: static unsigned char const DataFrame::FRAME_TYPE)
+     1>TR_Lib.obj : warning LNK4049: 已导入本地定义的符号 ?FRAME_DATA_LENGTH@DataFrame@@2HB (public: static int const DataFrame::FRAME_DATA_LENGTH)
+     1>TR_Lib.obj : warning LNK4217: 本地定义的符号 ??_7TRComm@@6B@ (const TRComm::`vftable') 在函数 "public: __thiscall TRComm::TRComm(void)" (??0TRComm@@QAE@XZ) 中导入
          serialcomm.vcxproj -> E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\Debug\serialcomm.dll
-     1>已完成生成项目“E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\serialcomm\serialcomm.vcxproj”(Build 个目标)的操作。
+     1>已完成生成项目“E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\serialcomm\serialcomm.vcxproj”(Rebuild 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:02.54
+已用时间 00:00:06.42

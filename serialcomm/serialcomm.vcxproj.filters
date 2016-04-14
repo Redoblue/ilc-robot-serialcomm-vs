@@ -30,7 +30,7 @@
     <ClInclude Include="robotcontroller.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="serialcomm.h">
+    <ClInclude Include="TR_Lib.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -54,6 +54,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="frame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TR_Lib.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="serialcomm.cpp">

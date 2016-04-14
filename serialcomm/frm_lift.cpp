@@ -1,5 +1,7 @@
-#include "serialframe.h"
+#define DLL_EXPORT
+
 #include "stdafx.h"
+#include "serialframe.h"
 
 const uint8_t LiftFrame::FRAME_TYPE = 2;
 const int LiftFrame::FRAME_DATA_NUM = 1;
@@ -13,9 +15,10 @@ LiftFrame::LiftFrame()
 	m_lineSpeed = 0;
 }
 
-LiftFrame::LiftFrame(float speed)
+LiftFrame::LiftFrame(float lineSpeed) :
+	m_lineSpeed(lineSpeed)
 {
-	this->m_lineSpeed = speed;
+
 }
 
 LiftFrame::~LiftFrame()

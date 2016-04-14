@@ -1,5 +1,7 @@
-#include "serialframe.h"
+#define DLL_EXPORT
+
 #include "stdafx.h"
+#include "serialframe.h"
 
 const uint8_t Frame::FRAME_HEAD_1 = 0x55;
 const uint8_t Frame::FRAME_HEAD_2 = 0xAA;
