@@ -1,0 +1,45 @@
+﻿生成启动时间为 2016/4/12 16:18:00。
+     1>项目“E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Ktr_lib.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (Ktr_lib.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D KTR_LIB_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\serialcomm.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /FR"Release\\" /Gd /TP /analyze- /errorReport:prompt robotcontroller.cpp dllmain.cpp frame.cpp frm_data.cpp frm_lift.cpp frm_walk.cpp stdafx.cpp serialcomm.cpp
+         robotcontroller.cpp
+         dllmain.cpp
+         frame.cpp
+         frm_data.cpp
+         frm_lift.cpp
+         frm_walk.cpp
+         stdafx.cpp
+         serialcomm.cpp
+     1>serialcomm.cpp(382): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>serialcomm.cpp(383): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>serialcomm.cpp(384): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>serialcomm.cpp(385): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>serialcomm.cpp(387): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Workspace\VisualStudio\Ktr_lib\Release\serialcomm.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Workspace\VisualStudio\Ktr_lib\Release\serialcomm.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Workspace\VisualStudio\Ktr_lib\Release\serialcomm.lib" /MACHINE:X86 /SAFESEH /DLL Release\robotcontroller.obj
+         Release\dllmain.obj
+         Release\frame.obj
+         Release\frm_data.obj
+         Release\frm_lift.obj
+         Release\frm_walk.obj
+         Release\stdafx.obj
+         Release\serialcomm.obj
+     1>LINK : warning C4727: 具有相同时间戳的名为 e:\workspace\visualstudio\ktr_lib\ktr_lib\release\serialcomm.pch 的 PCH 已存在于 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\dllmain.obj 和 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\robotcontroller.obj 中。  使用第一个 PCH。
+     1>LINK : warning C4727: 具有相同时间戳的名为 e:\workspace\visualstudio\ktr_lib\ktr_lib\release\serialcomm.pch 的 PCH 已存在于 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\frame.obj 和 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\robotcontroller.obj 中。  使用第一个 PCH。
+     1>LINK : warning C4727: 具有相同时间戳的名为 e:\workspace\visualstudio\ktr_lib\ktr_lib\release\serialcomm.pch 的 PCH 已存在于 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\frm_data.obj 和 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\robotcontroller.obj 中。  使用第一个 PCH。
+     1>LINK : warning C4727: 具有相同时间戳的名为 e:\workspace\visualstudio\ktr_lib\ktr_lib\release\serialcomm.pch 的 PCH 已存在于 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\frm_lift.obj 和 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\robotcontroller.obj 中。  使用第一个 PCH。
+     1>LINK : warning C4727: 具有相同时间戳的名为 e:\workspace\visualstudio\ktr_lib\ktr_lib\release\serialcomm.pch 的 PCH 已存在于 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\frm_walk.obj 和 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\robotcontroller.obj 中。  使用第一个 PCH。
+     1>LINK : warning C4727: 具有相同时间戳的名为 e:\workspace\visualstudio\ktr_lib\ktr_lib\release\serialcomm.pch 的 PCH 已存在于 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\stdafx.obj 和 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\robotcontroller.obj 中。  使用第一个 PCH。
+     1>LINK : warning C4727: 具有相同时间戳的名为 e:\workspace\visualstudio\ktr_lib\ktr_lib\release\serialcomm.pch 的 PCH 已存在于 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\serialcomm.obj 和 E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Release\robotcontroller.obj 中。  使用第一个 PCH。
+            正在创建库 E:\Workspace\VisualStudio\Ktr_lib\Release\serialcomm.lib 和对象 E:\Workspace\VisualStudio\Ktr_lib\Release\serialcomm.exp
+         正在生成代码
+         已完成代码的生成
+         Ktr_lib.vcxproj -> E:\Workspace\VisualStudio\Ktr_lib\Release\serialcomm.dll
+       BscMake:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"E:\Workspace\VisualStudio\Ktr_lib\Release\serialcomm.bsc" /n Release\robotcontroller.sbr Release\dllmain.sbr Release\frame.sbr Release\frm_data.sbr Release\frm_lift.sbr Release\frm_walk.sbr Release\stdafx.sbr Release\serialcomm.sbr
+     1>已完成生成项目“E:\Workspace\VisualStudio\Ktr_lib\Ktr_lib\Ktr_lib.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:14.32
