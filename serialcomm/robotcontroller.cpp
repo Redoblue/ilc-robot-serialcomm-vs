@@ -7,10 +7,10 @@
 
 #include <stdio.h>
 
-const float RobotController::LOW_WALK_SPEED = 0.2f;
-const float RobotController::MIDDLE_WALK_SPEED = 0.5f;
-const float RobotController::HIGH_WALK_SPEED = 0.8f;
-const float RobotController::MAX_WALK_SPEED = 1.0f;
+const float RobotController::LOW_WALK_SPEED = 0.1f;
+const float RobotController::MIDDLE_WALK_SPEED = 0.25f;
+const float RobotController::HIGH_WALK_SPEED = 0.4f;
+const float RobotController::MAX_WALK_SPEED = 0.5f;//max is changed
 const float RobotController::LOW_ROTATE_SPEED = 0.2f;
 const float RobotController::MIDDLE_ROTATE_SPEED = 0.5f;
 const float RobotController::HIGH_ROTATE_SPEED = 0.8f;
@@ -37,7 +37,7 @@ RobotController::~RobotController()
 	delete m_walkFrame;
 }
 
-int RobotController::InitPort(int port) const
+RobotController::OpenPortState RobotController::InitPort(int port) const
 {
 	if (m_trComm->InitPort(port))
 	{
@@ -53,7 +53,7 @@ int RobotController::InitPort(int port) const
 	}
 }
 
-int RobotController::ResetPort(int port) const
+RobotController::OpenPortState RobotController::ResetPort(int port) const
 {
 	if (m_trComm->IsOpen())
 	{
@@ -215,7 +215,7 @@ void RobotController::StopAll()
 	StopLift();
 }
 
-RobotController::LimitState RobotController::GetSwitchState()
+RobotController::LimitSwitchState RobotController::GetLimitSwitchState()
 {
 	return m_trComm->m_dataFrame->m_limitSwichState;
 }

@@ -36,13 +36,13 @@ public:
 
 	static enum SpeedMode
 	{
-		LOW,
+		LOW = 0,
 		MIDDLE,
 		HIGH
 	};
 	static enum RotateDirection
 	{
-		CLOCKWISE,
+		CLOCKWISE = 0,
 		COUNTER_CLOCKWISE
 	};
 	static enum LiftDirection
@@ -50,22 +50,22 @@ public:
 		UP,
 		DOWN
 	};
-	static enum LimitState
+	static enum LimitSwitchState
 	{
 		LIMIT_NONE_TOGGLED = 0,			// limit switch state
-		LIMIT_TOP_TOGGLED = 1,
-		LIMIT_BOTTOM_TOGGLED = 2,
-		LIMIT_UNKNOWN_STATE = 3
+		LIMIT_TOP_TOGGLED,
+		LIMIT_BOTTOM_TOGGLED,
+		LIMIT_UNKNOWN_STATE
 	};
 
-	static enum
+	static enum OpenPortState
 	{
-		PORT_OPEN_SUCCESS,
+		PORT_OPEN_SUCCESS = 0,
 		PORT_OPEN_FAILURE
 	};
 
-	int InitPort(const int port) const;
-	int ResetPort(const int port) const;
+	OpenPortState InitPort(const int port) const;
+	OpenPortState ResetPort(const int port) const;
 	void ClosePort() const;
 
 	void SetWalkSpeedMode(SpeedMode mode);
@@ -91,7 +91,7 @@ public:
 	void StopLift();
 	void StopAll();
 
-	LimitState GetSwitchState();
+	LimitSwitchState GetLimitSwitchState();
 
 private:
 	TRComm *m_trComm;

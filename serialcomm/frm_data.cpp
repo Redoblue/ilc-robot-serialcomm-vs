@@ -12,7 +12,7 @@ const int DataFrame::FRAME_END_FLAG = DataFrame::FRAME_XOR_FLAG + 1;
 const int DataFrame::FRAME_LENGTH = DataFrame::FRAME_END_FLAG;
 
 DataFrame::DataFrame() :
-	m_limitSwichState(RobotController::LimitState::LIMIT_NONE_TOGGLED)
+	m_limitSwichState(RobotController::LimitSwitchState::LIMIT_NONE_TOGGLED)
 {
 
 }

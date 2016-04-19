@@ -49,7 +49,7 @@ public:
 	static const int FRAME_END_FLAG;
 	static const int FRAME_LENGTH;
 
-	RobotController::LimitState m_limitSwichState;				// limit switch state
+	RobotController::LimitSwitchState m_limitSwichState;				// limit switch state
 };
 
 class DLLAPI WalkFrame : public Frame

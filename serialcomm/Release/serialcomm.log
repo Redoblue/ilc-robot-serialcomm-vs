@@ -1,5 +1,6 @@
-﻿生成启动时间为 2016/4/14 18:18:24。
+﻿生成启动时间为 2016/4/18 16:27:56。
      1>项目“E:\Workspace\VisualStudio\ilc-robot-serialcomm-vs\serialcomm\serialcomm.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppClean.targets(76,5): warning : 文件“e:\workspace\visualstudio\ilc-robot-serialcomm-vs\serialcomm\release\tr_lib.obj”正由另一进程使用，因此该进程无法访问此文件。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (Ktr_lib.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SERIALCOMM_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\serialcomm.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /FR"Release\\" /Gd /TP /analyze- /errorReport:prompt robotcontroller.cpp dllmain.cpp frame.cpp frm_data.cpp frm_lift.cpp frm_walk.cpp serialcomm.cpp stdafx.cpp TR_Lib.cpp
@@ -49,4 +50,4 @@
 
 生成成功。
 
-已用时间 00:00:08.95
+已用时间 00:00:09.33
